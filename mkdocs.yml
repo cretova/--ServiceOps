@@ -1,0 +1,54 @@
+site_name: 小微 ServiceOps 项目文档
+site_description: 面向小微生态的企业级 ServiceOps 平台面试项目材料
+site_author: Cretova
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.tracking
+    - toc.follow
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: blue
+      accent: indigo
+
+nav:
+  - 首页: index.md
+  - 项目选择逻辑: 项目选择思考过程总结.md
+  - 能力可行性与价值指标: 能力可行性与价值指标分析.md
+  - MVP 前端说明: mvp/README.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+
+extra:
+  generator: false
