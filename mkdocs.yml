@@ -10,6 +10,7 @@ theme:
     - navigation.expand
     - navigation.top
     - navigation.tracking
+    - toc.integrate
     - toc.follow
     - search.highlight
     - search.suggest
